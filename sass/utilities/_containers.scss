@@ -1,0 +1,90 @@
+// Contenedores
+.text-container{
+    background-color: $color-white;
+    padding: 15px 25px;
+}
+//      Carrusel con imagenes
+.item-carousel{
+    .item-container{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .item-image{
+            @include mobile{
+                width: 300px;
+            }
+            @include tablet{
+                width: 400px;
+            }
+            @include desktop{
+                width: 200px;
+            }
+        }
+        .item-card{
+            @include mobile{
+                width: 300px;
+                height: 170px;
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+            @include tablet{
+                width: 400px;
+                height: 170px;
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+            @include desktop{
+                width: 200px;
+                height: 170px;
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+            h3{
+                text-align: center;
+            }
+        }
+    }
+}
+.item-carousel.mobile{
+    @include desktop{
+        display: none;
+    }
+}
+.item-carousel.desktop{
+    @include mobile{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
+}
+
+//      Caja con imagenes desktop
+.item-box-container.desktop{
+    @include mobile{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .item-container{
+        margin: 30px 15px;
+        .item-image{
+            width: 200px;
+        }
+        .item-card{
+            width: 200px;
+            height: 200px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            h3{
+                text-align: center;
+            }
+        }
+    }
+}

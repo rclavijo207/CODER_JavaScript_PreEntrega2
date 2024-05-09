@@ -1,0 +1,219 @@
+@import "abstracts/_colors.scss";
+@import "abstracts/_media-query.scss";
+@import "abstracts/_variables.scss";
+@import "utilities/_designs.scss";
+@import "utilities/_containers.scss";
+@import "utilities/_animations.scss";
+
+// Estilos de páginas
+@import "pages/_index.scss";
+@import "pages/_mascotas.scss";
+@import "pages/_menu.scss";
+@import "pages/_eventos.scss";
+@import "pages/_contacto.scss";
+
+// Elementos
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+body{
+    background-color: $bg-body;
+}
+
+//      Diseños principales
+nav{
+    background-color: $bg-header;
+    .header-container{
+        background-color: none;
+        .navbar-brand{
+            img{
+                width: 150px;
+                height: 80px;
+            }
+        }
+        .nav-link{
+            color: $color-dun;
+            font-size: x-large;
+            text-align: center;
+        }
+        .active{
+            color: $color-dun;
+            font-size: x-large;
+        }
+        .navbar-toggler{
+            border: 0;
+        }
+        .navbar-collapse{
+            justify-content: flex-end;
+        }
+        .nav-link{
+            @include mobile{
+                font-size: 26px;
+            }
+            @include tablet{
+                font-size: 28px;
+            }
+            @include desktop{
+                font-size: 32px;
+            }
+        }
+    }
+}
+.footer-container{
+    background-color: $bg-footer;
+    color: $color-dun;
+    display: flex;
+    flex-direction: column;
+    .footer-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mobile{
+            flex-direction: column; 
+            .footer-image{
+                align-self: center;
+                img{
+                    width: 300px;
+                    height: 128px;
+                }
+            }
+            .footer-info{
+                .info-list{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    list-style: none;
+                    padding-inline-start: 0;
+                    li{
+                        margin: 20px 16px 0 16px;
+                    }
+                    p{
+                        margin-bottom: 10px;
+                        font-size: small;
+                    }
+                }
+            }
+        }
+        @include tablet{
+            flex-direction: row;
+            .footer-image{
+                align-self: center;
+                img{
+                    width: 300px;
+                    height: 128px;
+                }
+            }
+            .footer-info{
+                .info-list{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: flex-end;
+                    list-style: none;
+                    padding-inline-start: 0;
+                    li{
+                        margin: 26px 22px 0 22px;
+                    }
+                    p{
+                        margin-bottom: 6px;
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+        @include desktop{
+            flex-direction: row;
+            .footer-image{
+                align-self: center;
+                img{
+                    width: 500px;
+                    height: 200px;
+                }
+            }
+            .footer-info{
+                .info-list{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: flex-end;
+                    list-style: none;
+                    padding-inline-start: 0;
+                    li{
+                        margin: 26px 22px 0 22px;
+                    }
+                    p{
+                        margin-bottom: 6px;
+                        font-size: large;
+                    }
+                }
+            }
+        }
+    }
+    .footer-socials{
+        .socials-list{
+            list-style: none;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            padding-inline-start: 0;
+            img{
+                width: 50px;
+            }
+        }
+        @include mobile{
+            .socials-list{
+                justify-content: center;
+                li{
+                    margin: 16px 10px 24px 10px;
+                }
+            }
+        }
+        @include tablet{
+            .socials-list{
+                justify-content: center;
+                li{
+                    margin: 16px 14px 24px 14px;
+                }
+            }
+        }
+        @include desktop{
+            .socials-list{
+                justify-content: center;
+                li{
+                    margin: 20px 16px 24px 16px;
+                }
+                // Animación para íconos
+                .img-icon:hover{
+                    @include rotate-center;
+                }
+            }
+        }
+    }
+    .footer-copyright{
+        display: flex;
+        flex-direction: row;
+        @include mobile{
+            justify-content: space-between;
+            p {
+                margin: 0 10px 3px 10px;
+            }
+        }
+        @include tablet{
+            justify-content: center;
+            p {
+                line-height: 32px;
+                margin: 0 64px 3px 64px;
+            }
+        }
+        @include desktop{
+            justify-content: center;
+            p {
+                line-height: 32px;
+                margin: 0 96px 3px 96px;
+            }
+        }
+    }
+}

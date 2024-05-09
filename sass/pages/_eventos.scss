@@ -1,0 +1,89 @@
+// Información sobre eventos
+.section-container.title{
+    background-color: $bg-section-medium;
+    color: $color-dun;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   h1{
+    text-align: center;
+   }
+}
+.curled-polygon.title{
+    background-color: $bg-section-medium;
+}
+
+// Listado de eventos
+.section-container.events{
+    background-color: $bg-section-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .event-card{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 300px;
+            }
+            .event-text{
+                width: 300px;
+                margin-top: 20px;
+                .event-button{
+                    width: 200px;
+                    align-self: center;
+                }
+            }
+        }
+        @include tablet{
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 300px;
+            }
+            .event-text{
+                width: 300px;
+                margin-top: 20px;
+                .event-button{
+                    width: 200px;
+                    align-self: center;
+                }
+            }
+        }
+        @include desktop{
+            flex-direction: row;
+            align-items: center;
+            width: 800px;
+            img{
+                width: 300px;
+                margin-right: 20px;
+            }
+            .event-text{
+                width: 380px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .event-button{
+                    width: 200px;
+                    align-self: center;
+                }
+            }
+        }
+        .event-text{
+            display: flex;
+            flex-direction: column;
+            color: $color-dun;
+            h2{
+                text-align: center;
+            }
+            .event-button{
+                background-color: $color-olivine;
+                border: none;
+                border-radius: 3px;
+            }
+        }
+    }
+}

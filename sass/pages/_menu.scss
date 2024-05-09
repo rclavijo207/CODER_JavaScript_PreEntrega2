@@ -1,0 +1,34 @@
+// Productos
+.section-container.drinks{
+    background-color: $bg-section-medium;
+    color: $color-dun;
+    h2{
+        text-align: center;
+        padding-top: 30px;
+        font-size: 45px;
+    }
+    h3{
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    p{
+        font-size: x-large;
+    }
+}
+.section-container.edibles{
+    background-color: $bg-section-dark;
+    color: $color-dun;
+    h2{
+        text-align: center;
+        padding-top: 30px;
+        font-size: 45px;
+    }
+    h3{
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    p{
+        font-size: x-large;
+        margin-bottom: 30px;
+    }
+}

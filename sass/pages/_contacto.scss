@@ -1,0 +1,135 @@
+// Título
+.section-container.title{
+    background-color: $bg-section-light;
+    color: $color-taupe;
+}
+
+// Reglas de la casa
+.section-container.rules{
+    background-color: $bg-section-medium;
+    color: $color-dun;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .page-title{
+        margin-top: 30px;
+    }
+    .rules-info{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        background-color: $bg-body;
+        color: $color-taupe;
+        padding: 10px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        @include mobile{
+            border: 5px solid $color-resedagreen;
+            width: 300px;
+        }
+        @include tablet{
+            border: 8px solid $color-resedagreen;
+            width: 500px;
+        }
+        @include desktop{
+            border: 10px solid $color-resedagreen;
+            width: 600px;
+        }
+        h2{
+            text-decoration: underline ;
+        }
+        h3{
+            align-self: center;
+            text-align: center;
+            @include mobile{
+                width: 95%;
+            }
+            @include tablet{
+                width: 90%;
+            }
+            @include desktop{
+                width: 80%;
+            }
+            margin-top: 15px;
+            color: $color-resedagreen;
+            font-weight: 600;
+        }
+        ul li{
+            margin-bottom: 6px;
+        }
+    }
+}
+.curled-polygon.title{
+    background-color: $bg-section-light;
+}
+.curled-polygon.rules{
+    background-color: $bg-section-medium;
+}
+
+// Formulario de contacto
+.section-container.booking{
+    background-color: $bg-section-dark;
+    color: $color-dun;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .booking-form{
+        margin-top: 50px;
+        @include mobile{
+            width: 300px;
+        }
+        @include tablet{
+            width: 450px;
+        }
+        @include desktop{
+            width: 500px;
+        }
+        display: flex;
+        flex-direction: column;
+        label{
+            text-align: left;
+            margin-right: 20px;
+        }
+        input, textarea{
+            padding: 5px;
+        }
+        .form-data1{
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        .form-data2{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            width: 50%;
+        }
+        .form-data3{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+        .form-buttons{
+            margin-bottom: 50px;
+            align-self: flex-end;
+            .reset-button{
+                width: 80px;
+                height: 30px;
+                background-color: $color-olivine;
+                color: $color-white;
+                border: none;
+                border-radius: 3px;
+            }
+            .submit-button{
+                width: 100px;
+                height: 30px;
+                background-color: $color-resedagreen;
+                color: $color-white;
+                border: none;
+                border-radius: 3px;
+            }
+        }
+    }
+}

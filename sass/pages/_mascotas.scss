@@ -1,0 +1,25 @@
+// Diseños
+.lower-polygon.title{
+    background-color: $bg-section-light;
+}
+.lower-polygon.medium{
+    background-color: $bg-section-medium;
+}
+
+//      Imagenes de los perros
+.section-container.dogs{
+    background-color: $bg-section-medium;
+    color: $color-dun;
+    h2{
+        text-align: center;
+        padding-top: 30px;
+    }
+}
+.section-container.cats{
+    background-color: $bg-section-dark;
+    color: $color-dun;
+    h2{
+        text-align: center;
+        padding-top: 30px;
+    }
+}
