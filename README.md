@@ -1,7 +1,7 @@
 JavaScript PreEntrega2 Roberto Clavijo.
 
 Hola.
-Aprovecho este espacio para realizar algunas aclaraciones ya que los comentarios ene la entrega no ocupan mucho espacio.
+Aprovecho este espacio para realizar algunas aclaraciones ya que los comentarios en la entrega no ocupan mucho espacio.
 
 Cambié la consigna de mi proyecto, la convertí en una web de una Cafetería con temática de mascotas, que fue en lo que
 estuve trabajando en el curso de Desarrollo Web también de Coder. Debido a que ese proyecto no posee interactividad opté
